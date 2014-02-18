@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="css/app.css">
         <link rel="author" href="humans.txt">
         <!-- <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'> -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+        <!-- <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'> -->
         <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'> -->
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+        <!-- <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'> -->
         <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'> -->
     </head>
     <body>
@@ -45,25 +45,58 @@
                             <!-- <button class="btn btn-gray create-wallet">Create New Wallet</button> -->
                             <span class="gray">Current Price: $923.76</span>
                         </span>
-
                     </span>
                 </div>
+            </div>
+        </header>
+
+        <header id="app-section-header">
+            <div class="container">
+                <ul class="sub-nav col-sm-6 col-md-6 col-lg-6">
+                    <!-- Holdings Overview -->
+                </ul>
+                <span class="sub-nav col-sm-6 col-md-6 col-lg-6">
+                    <!-- <span class="right"> -->
+                        <button class="btn-sect-header right">Connect Outside Wallet</button>
+                        <button class="btn-sect-header right">Create an Account</button>
+                    <!-- </span> -->
+                </span>
             </div>
         </header>
 
         <section id="main-content-container">
             <div class="container">
 
-                    <div class="main-content main-content-left-container no-pad med col-sm-6 col-md-6 col-lg-6">
+                    <div class="main-content main-content-left-container no-pad med col-sm-off col-sm-3 col-md-off col-md-3 col-lg-off col-lg-3">
                         <div class="main-content-left">
 
-                            <div class="wallet-group">
-                                <div id="bitgo" class="wallet-group-title title active col-sm-12 col-md-12 col-lg-12">
+
+                            <div class="block no-pad col-sm-12 col-md-12 col-lg-12">
+                                <div class="group">
+                                    <div class="group-tile group-header">
+                                        <h2>All BitGo Secured Accounts</h2>
+                                        <span class="subtext">72,431.833 BTC</span>
+                                    </div>
+                                    <div class="group-tile">
+                                        <h2>My Bitcoin Account</h2>
+                                        <span class="subtext">25.226 BTC</span>
+                                    </div>
+                                    <div class="group-tile">
+                                        <h2>Market Moves</h2>
+                                        <span class="subtext">25.226 BTC</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+
+<!--                             <div class="wallet-group">
+                                <div id="bitgo" class="wallet-group-title title col-sm-12 col-md-12 col-lg-12">
                                     <h2>BitGo Secured Accounts <span class="right">$139,373.45</span></h2>
                                 </div>
 
                                 <div class="col-sm-12 col-md-12 col-lg-12">
-                                    <div class="wallet-tile emphasize-active wallet-tile-pos fast col-sm-12 col-md-12 col-lg-12"><a href="#">
+                                    <div class="wallet-tile emphasize-ac wallet-tile-pos fast col-sm-12 col-md-12 col-lg-12"><a href="#">
                                             <span class="title col-sm-6 col-md-6 col-lg-6">Savings</span>
                                             <span class="col-sm-6 col-md-6 col-lg-6">
                                                 <span class="title right">$22,152.76</span>
@@ -73,7 +106,7 @@
                                 </div>
 
                                 <div class="col-sm-12 col-md-12 col-lg-12">
-                                    <div class="wallet-tile emphasize-active wallet-tile-pos fast col-sm-12 col-md-12 col-lg-12"><a href="#">
+                                    <div class="wallet-tile emphasize-ac wallet-tile-pos fast col-sm-12 col-md-12 col-lg-12"><a href="#">
                                             <span class="title col-sm-6 col-md-6 col-lg-6">Overnight Sweeps</span>
                                             <span class="col-sm-6 col-md-6 col-lg-6">
                                                 <span class="title right">$1,233.94</span>
@@ -82,35 +115,32 @@
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
-                            </div>
+                            </div> -->
 
 
 
                     <!-- Without Linked Accounts -->
-                            <div class="wallet-group">
+<!--                             <div class="wallet-group">
                                 <div class="title col-sm-12 col-md-12 col-lg-12">
                                     <h2>Outside Accounts <span class="right">$0</span></h2>
                                 </div>
                                 <div class="col-sm-12 col-md-12 col-lg-12">
-                                    <div class="wallet-tile emphasize-active wallet-tile-po fast col-sm-12 col-md-12 col-lg-12"><a href="#">
-                                            <span class="title col-sm-12 col-md-12 col-lg-12">Link your Coinbase account</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col-lg-12">
-                                    <div class="wallet-tile emphasize-active wallet-tile-po fast col-sm-12 col-md-12 col-lg-12"><a href="#">
-                                            <span class="title col-sm-12 col-md-12 col-lg-12">Link your BitStamp account</span>
+                                    <div class="wallet-tile emphasize-ac wallet-tile-po fast col-sm-12 col-md-12 col-lg-12"><a href="#">
+                                            <span class="title col-sm-12 col-md-12 col-lg-12">Link an outside account</span>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
+ -->
+
+
                         </div>
                     </div>
 
 
 
-                     <div class="main-content med no-pad main-content-right-container sunken col-sm-6 col-md-6 col-lg-6">
+                     <div class="hidden main-content med no-pad main-content-right-container sunken col-sm-6 col-md-6 col-lg-6">
 
 <!-- SLIDEOUT -->
                         <div class="main-content-right med no-pad slideout slideout-vertical slideout-left col-sm-12 col-md-12 col-lg-12">
