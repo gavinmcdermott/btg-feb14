@@ -222,8 +222,8 @@ angular.module('sample', [])
                     $timeout(function() {
                         $('#wallet-list').addClass('hide');
                         $('.ln-pull-left').toggleClass('ln-pull-right');
-                        scope.modMmenu = false;
                             $timeout(function() {
+                                scope.modMenu = false;
                                 $('#wallet-list').removeClass('hide').addClass('show');
                                 $('.ln-pull-left').removeClass('ln-pull-left ln-pull-right');
                                 isMoving = false;
@@ -232,6 +232,7 @@ angular.module('sample', [])
                     }, 0);
                 } else {
                     hideAccount();
+                    scope.$apply();
                 }
             });
 
@@ -293,16 +294,24 @@ angular.module('sample', [])
                 scope.$apply();
             });
 
-            $('.small-q').click(function() {
+            $('.small-q-info').click(function() {
                 scope.ppInfo = true;
                 scope.$apply();
             });
 
+            $('.small-q-au').click(function() {
+                scope.au = true;
+                scope.$apply();
+            });
+
+
             $('.pp').keyup(function() {
                 if (this.value.length >= 3) {
                     scope.securityScore = "Secure";
+                    scope.secure = true;
                 } else {
                     scope.securityScore = "Not Secure";
+                    scope.secure = false;
                 }
                 scope.$apply();
             });

@@ -90,8 +90,9 @@ html, body {
     /*font-family: 'Lato', sans-serif;*/
     font-family: 'HelveticaNeue-Light', HelveticaNeue, helvetica, arial, sans-serif;
     /*font-family: 'Crimson Text', serif;*/
-    /*font-family: 'garogierregular', serif;*/
+    font-family: 'PT Serif', serif;
     /*font-weight: 300;*/
+    background-color: white;
 }
 
 * {
@@ -141,6 +142,7 @@ h2 {
 body {
   /*background-color: green;*/
   background-color: rgb(218, 218, 218);
+  background-color: white;
 }
 
 #site-header {
@@ -148,11 +150,11 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 123px;
+    height: 60px;
     /*height: calc(100% / 5);*/
-    line-height: 123px;
+    line-height: 60px;
     /*line-height: calc(100% / 6);*/
-    background-color: #292F31;
+    background-color: rgb(44, 53, 74);
     color: #cecece;
     font-size: 13px;
 
@@ -160,23 +162,40 @@ body {
 }
 
 .site-header-container {
-  height: 123px;
-  line-height: 123px;
+  height: 60px;
+  line-height: 60px;
   letter-spacing: 1.6px;
-  background-color: #292F31;
+  font-family: 'HelveticaNeue-Light', sans-serif;
+  /*background-color: #012a3b;*/
   /*background-color: red;*/
 }
+
+.site-header-container a {
+  text-transform: uppercase;
+  /*font-weight: lighter;*/
+  color: rgb(109, 119, 148);
+  letter-spacing: 1px;
+}
+.site-header-container a:hover,
+.site-header-container a.active {
+  color: rgb(239, 242, 248);
+  text-decoration: none;
+}
+
 
 .site-header-top {
-  height: 72px;
-  line-height: 72px;
-  /*background-color: red;*/
+  height: 60px;
+  line-height: 60px;
 }
 
-.site-header-bottom {
+/*.site-header-bottom {
   height: 51px;
   line-height: 51px;
-  background-color: #424C52;
+  background-color: #024d68;
+}*/
+
+.site-header-container {
+  border-bottom: 1px solid rgb(69, 76, 87);
 }
 
 .site-header-container h1 {
@@ -206,11 +225,11 @@ body {
 }
 
 .nav.nav-r {
-  margin-left: 72px;
+  margin-left: 60px;
 }
 
 .nav.nav-l {
-  margin-right: 72px;
+  margin-right: 60px;
 }
 
 .main-header-container .subnav {
@@ -219,12 +238,141 @@ body {
 }
 
 .subnav.subnav-l {
-  margin-right: 72px;
+  margin-right: 60px;
 }
 
 .subnav.subnav-r {
-  margin-left: 72px;
+  margin-left: 60px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#section-header-bg {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: rgb(44, 53, 74);
+  height: 266px;
+}
+
+#section-header-buttons-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 266px;
+  height: 60px;
+  background-color: rgb(25, 29, 40);
+}
+
+.app-section-header-container {
+  position: relative;
+  height: 266px;
+  background-color: rgb(44, 53, 74);
+}
+
+.app-section-header {
+  padding: 32px 0 0 0;
+  color: rgb(212, 217, 223);
+}
+
+.app-section-header.header-left {
+
+}
+
+.app-section-header.header-right {
+  color: rgb(113,136,160);
+}
+
+.section-header-info {
+  padding-top: 7px;
+  display: block;
+  font-size: 18px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.section-header-info .green {
+  color: #1C9739;
+}
+
+.overview {
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: rgb(78, 89, 122);
+  display: block;
+  letter-spacing: 5px;
+  padding-top: 14px
+}
+
+.bigbalance {
+  display: block;
+  font-size: 46px;
+  font-weight: lighter;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.smallcash {
+  display: inline-block;
+  padding: 7px 7px 0 0;
+  vertical-align: top;
+  font-size: 32px;
+}
+
+.smallmkt {
+  font-size: 18px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  /*color: #999;*/
+  color: rgb(109, 119, 148);
+}
+
+.app-section-header-buttons {
+  position: absolute;
+  background-color: rgb(25, 29, 40);
+  bottom: 0;
+  height: 60px;
+  padding: 8px 0;
+}
+
+.header-btn-container {
+  height: 100%;
+  border-right: 1px solid rgb(43, 49, 64);
+  cursor: pointer;
+}
+.header-btn-container:last-child {
+  border-right: none;
+}
+
+.header-btn {
+  display: inline-block;
+  width: 100%;
+  line-height: 46px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(183, 191, 212);
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -244,14 +392,14 @@ body {
   overflow: scroll;
 
   /*top: calc(100%);*/
-  height: calc(100% - 123px);
+  height: calc(100% - 296px);
   /*background-color: #292F31;*/
   /*background-color: rgba(0, 0, 0, 0.15);*/
   /*background-color: rgb(218, 218, 218);*/
 }
 
 .main-content {
-  height: calc(100% - 123px);
+  height: calc(100% - 296px);
   /*overflow: scroll;*/
   -ms-overflow-x: hidden;
   overflow-x: hidden;
@@ -268,10 +416,24 @@ body {
 .left-nav-container {
   position: relative;
   /*top: calc( (100% / 5) * 1);*/
-  height: calc(100% - 123px);
+  height: calc(100% - 296px);
   /*background-color: #292F31;*/
   background-color: rgba(38, 38, 38, 1);
   background-color: rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8;
+}
+
+.left-nav-container:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 11px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(100%, rgba(0,0,0,0.25)));
+  background: -webkit-linear-gradient(left, transparent 0, rgba(0,0,0,0.25) 100%);
+  background: linear-gradient(to right, transparent 0, rgba(0,0,0,0.25) 100%);
+  opacity: .4;
 }
 
 .left-nav {
@@ -320,13 +482,12 @@ body {
 
 .main-content .tile {
   position: relative;
-  min-height: 162px;
-  margin: 0 0 11px 0;
+  margin: 0 0 15px 0;
   z-index: 1000;
-  background-color: rgba(206, 206, 206, 1);
-  padding: 22px 11px;
-  /*border: 1px solid red;*/
-  color: rgb(21,21,21);
+  padding: 15px;
+  color: #404040;
+  border-bottom: 1px solid #e5e5e5;
+  font-weight: lighter;
 }
 .main-content .tile.green {
     border-left: 8px solid #0fb493;
@@ -359,8 +520,15 @@ body {
 
 .inner .lead {
   /*font-family: 'Open Sans';*/
-  font-size: 3em;
+  font-size: 26px;
+  display: block;
 }
+.inner .sublead {
+  display: inline-block;
+  padding: 7px 0 0 0;
+  color: #999;
+}
+
 
 .lead.create-account {
   font-size: 24px;
@@ -413,7 +581,8 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgb(218, 218, 218);
+  /*background-color: rgb(218, 218, 218);*/
+  background-color: white;
   top: 0;
   left: 0;
   visibility: hidden;
@@ -505,6 +674,28 @@ body {
   margin-left: 22px;
   font-size: 16px;
 }
+
+.btn-wallet-create {
+  margin: 22px 0;
+  background-color: #0fb493;
+}
+
+.wallet-cancel {
+  height: 44px;
+  margin: 22px;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 44px;
+}
+
+
+
+
+
+
+
+
+
 
 
 .input-group {
@@ -599,6 +790,9 @@ input.new-wallet:focus {
   /*line-height: 78px;*/
   font-size: 34px;
   /*padding: 11px 0 19px 0;*/
+  -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0 0 0px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 0px rgba(0,0,0,0.1);
 }
 .new-wallet.generic-field {
   margin: 11px auto;
@@ -612,11 +806,11 @@ input.new-wallet:focus {
 }
 
 
-.small-q {
+.small-q-info,
+.small-q-au {
   font-size: 14px;
   color: gray;
-  display: inline-block;
-  padding: 3px;
+  padding: 11px 0;
   border-radius: 2px;
 }
 .pp-info {

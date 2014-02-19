@@ -10,16 +10,8 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/animations.css">
         <link rel="author" href="humans.txt">
-        <!-- <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'> -->
-        <!-- <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'> -->
-        <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
-        <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'> -->
-        <!-- <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'> -->
+        <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:100|Open+Sans:400,300,600,700|Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
-
-        <!-- <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'> -->
-        <!-- <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'> -->
-        <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'> -->
     </head>
     <body ng-app="sample" ng-controller="MainCtrl" main-state-manager>
 
@@ -35,20 +27,26 @@
             </div>
         </header>
 
+        <div id="section-header-bg" class="med">
+        </div>
+
+        <div id="section-header-buttons-bg">
+        </div>
+
         <section id="site-body">
             <div class="container no-pad">
                 <div class="no-pad col-sm-12 col-md-12 col-lg-12 site-header-container">
                     <div class="site-header-top">
                         <div class="no-pad col-sm-2 col-md-2 col-lg-2 left-header-container">
-                            BitGo
+                            <a href="#" class="nav">BitGo</a>
                         </div>
                         <div class="col-sm-10 col-md-10 col-lg-10 main-header-container">
-                            <a href="#" class="left nav nav-l">Portfolio</a>
+                            <a href="#" class="left nav nav-l active">Portfolio</a>
                             <a href="#" class="left nav nav-l">Market</a>
                             <a href="#" class="right nav nav-r">Gavin McDermott</a>
                         </div>
                     </div>
-                    <div class="site-header-bottom">
+                    <!-- <div class="site-header-bottom">
                         <div class="no-pad col-sm-2 col-md-2 col-lg-2 left-header-container">
 
                         </div>
@@ -57,26 +55,60 @@
                             <a href="#" class="left subnav subnav-l">Settings</a>
                             <span href="#" class="right subnav subnav-r">Current Market Price: $632.58</span>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div class="no-pad col-sm-2 col-md-2 col-lg-2 left-nav-container">
+                <div class="no-pad col-sm-12 col-md-12 col-lg-12 app-section-header-container med">
+                    <div class="no-pad col-sm-4 col-md-4 col-lg-4 app-section-header header-left">
+                        <span class="overview">Current Price</span>
+                        <span class="bigbalance">
+                            <span class="smallcash">$</span>627.78
+                        </span>
+
+                        <span class="smallmkt"><span class="green">+4.5%</span> (12.74)</span>
+                    </div>
+                    <div class="no-pad col-sm-4 col-md-4 col-lg-4 app-section-header header-left">
+                        <span class="overview">Total HOLDINGS</span>
+                        <span class="bigbalance">
+                            <span class="smallcash">$</span>23,567.13
+                        </span>
+
+                        <span class="smallmkt">37.2895 BTC</span>
+                    </div>
+                    <div class="no-pad col-sm-4 col-md-4 col-lg-4 app-section-header header-left">
+                        <span class="overview">BitGo Holdings</span>
+                        <span class="bigbalance">
+                            <span class="smallcash">$</span>17,723.49
+                        </span>
+
+                        <span class="smallmkt">76% in BitGo Secured wallets</span>
+                    </div>
+
+                    <!-- Bottom Buttons -->
+                    <div class="no-pad col-sm-12 col-md-12 col-lg-12 app-section-header-buttons">
+                        <div class="header-btn-container no-pad col-sm-3 col-md-3 col-lg-3">
+                            <span class="header-btn">Add New Account</span>
+                        </div>
+                        <div class="header-btn-container no-pad col-sm-3 col-md-3 col-lg-3">
+                            <span class="header-btn">Link Outside Account</span>
+                        </div>
+                        <div class="header-btn-container no-pad col-sm-3 col-md-3 col-lg-3">
+                            <span class="header-btn">Send Bitcoins</span>
+                        </div>
+                        <div class="header-btn-container no-pad col-sm-3 col-md-3 col-lg-3">
+                            <span class="header-btn">Manage Security</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="no-pad col-sm-3 col-md-3 col-lg-3 left-nav-container">
                     <div class="left-nav">
                         <div class="left-nav-level animated level-one">
                             <div class="left-nav-header">
 
                             </div>
-                       <!--      <div class="block no-pad col-sm-12 col-md-12 col-lg-12">
-                                <div class="inner">
-                                    <span class="icon-lg">AA</span>
-                                </div>
-                            </div>
-                            <div class="block no-pad col-sm-12 col-md-12 col-lg-12">
-                                <div class="inner">
-                                    <span class="icon-lg">BB</span>
 
-                                </div>
-                            </div> -->
                         </div>
                         <div class="left-nav-level animated level-two">
                             <div class="left-nav-header">
@@ -84,7 +116,7 @@
                                 <div ng-show="modMenu" class="section-back">Cancel</div>
                             </div>
 
-                            <div ng-hide="modMenu">
+                            <div>
                                 <div class="block no-pad col-sm-12 col-md-12 col-lg-12">
                                     <div class="inner">
                                         <span class="icon-lg">A</span>
@@ -100,151 +132,51 @@
                                         <span class="icon-lg">A</span>
                                     </div>
                                 </div>
+                            </div>
+
+                            <!-- <div ng-show="modMenu">
                                 <div class="block no-pad col-sm-12 col-md-12 col-lg-12">
                                     <div class="inner">
-                                        <span class="icon-lg">A</span>
-                                    </div>
-                                </div>
-                                <div class="block no-pad col-sm-12 col-md-12 col-lg-12">
-                                    <div class="inner">
-                                        <span class="icon-lg">A</span>
-                                    </div>
-                                </div>
-                                <div class="block no-pad col-sm-12 col-md-12 col-lg-12">
-                                    <div class="inner">
-                                        <span class="icon-lg">A</span>
+                                        <span class="icon-lg">create icon</span>
                                     </div>
                                 </div>
                             </div>
-
-                            <div ng-show="modMenu">
-                                <div class="block no-pad col-sm-12 col-md-12 col-lg-12">
-                                    <div class="inner">
-                                        <span class="icon-lg">Save</span>
-                                    </div>
-                                </div>
-                            </div>
-
+ -->
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-10 no-pad col-md-10 col-lg-10 main-content-container animated secondary-container">
+                <div class="col-sm-9 no-pad col-md-9 col-lg-9 main-content-container animated secondary-container">
 
                     <div class="secondary-page">
                         <div class="main-content">
                             <div id="wallet-list" class="animated main-content-scroller">
 
-                                <div ng-show="creatingAccount" account-creator>
-                                    <div class="accounts-header" class="no-pad col-sm-12 col-md-12 col-lg-12">
-                                        <div class="clearfix"></div>
-                                    </div>
-
-                                    <div class="tile tile-create-account med col-sm-12 col-md-12 col-lg-12">
-                                        <div class="tile-info no-pad col-sm-6 col-md-6 col-lg-6">
-                                            <div class="inner">
-                                                <div class="lead">
-                                                    <span class="input-group">
-                                                        <!-- <span class="fake-cursor animated blinky"></span> -->
-                                                        <input class="new-wallet title-field" type="text" placeholder="Account Name" ng-model="walletname">
-                                                    </span>
-                                                </div>
-                                                <div class="clearfix"></div>
-
-                                            </div>
-                                        </div>
-                                        <div class="tile-info no-pad col-sm-6 col-md-6 col-lg-6">
-                                            <div class="inner">
-                                                <div class="lead right"></div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-
-                                        <div ng-show="stuff">
-                                            <div class="inner">
-                                                <div class="input-group">
-                                                    <div class="lead col-sm-12 col-md-12 col-lg-12 create-account">
-                                                        Protect your new account with a pass phrase <span class="small-q">what's a passphrase?</span>
-                                                        <div class="pp-info no-pad col-sm-8 col-md-8 col-lg-8" ng-show="ppInfo">
-                                                            A passphrase is more secure than a simple password. It should be a phrase....and blah blah blah for the best description for someone.
-                                                        </div>
-                                                    </div>
-                                                    <div class="tile-info col-sm-4 col-md-4 col-lg-4">
-                                                        <input class="new-wallet pp generic-field" type="password" placeholder="Passphrase">
-                                                    </div>
-                                                    <div class="tile-info col-sm-4 col-md-4 col-lg-4">
-                                                        <input class="new-wallet generic-field" type="password" placeholder="Confirm it">
-                                                    </div>
-                                                    <div class="pp-score col-sm-4 col-md-4 col-lg-4">
-                                                        This is {{ securityScore }}.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="clearfix"></div> -->
-                                    </div>
-
-<!--                                     <div class="col-sm-12 col-md-12 col-lg-12">
-                                        <div class="col-sm-12 col-md-12 col-lg-12 form-title">
-                                            Create a New Account
-                                        </div>
-                                        <div class="no-pad col-sm-7 col-md-7 col-lg-7">
-                                            <input type="text" placeholder="Name Your New Account"/>
-                                        </div>
-                                        <div class="no-pad col-sm-5 col-md-5 col-lg-5">
-d
-                                        </div>
-                                    </div> -->
-                                </div>
-
                                 <div ng-hide="creatingAccount">
-                                    <div class="accounts-header" class="no-pad col-sm-12 col-md-12 col-lg-12">
-                                        <button id="add-act" class="right btn btn-act-header">Add an Account</button>
-                                        <button id="link-act" class="right btn btn-act-header">Link an Outside Account</button>
-                                        <div class="clearfix"></div>
-                                    </div>
+
                                     <div id="account-tile-a" class="tile col-sm-12 col-md-12 col-lg-12">
                                         <div class="tile-info no-pad col-sm-6 col-md-6 col-lg-6">
                                             <div class="inner">
                                                 <div class="lead">Main Wallet</div>
-                                                <div class="clearfix"></div>
-                                                <h2 class="">23.5487 Bitcoins</h2>
+                                                <div class="sublead">Created December 3, 2013</div>
                                             </div>
                                         </div>
-                                        <div class="tile-info no-pad col-sm-6 col-md-6 col-lg-6">
+                                        <div class="tile-info no-pad col-sm-3 col-md-3 col-lg-3">
+                                            <div class="inner">
+                                                <div class="lead right">24.1637</div>
+                                                <div class="clearfix"></div>
+                                                <div class="sublead right"></div>
+                                            </div>
+                                        </div>
+                                        <div class="tile-info no-pad col-sm-3 col-md-3 col-lg-3">
                                             <div class="inner">
                                                 <div class="lead right">$15,054.30</div>
                                                 <div class="clearfix"></div>
-                                                <h2 class="right"></h2>
+                                                <div class="sublead right"></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tile col-sm-12 col-md-12 col-lg-12">
-                                        <div class="inner">
-                                            <div class="lead">Spending</div>
-                                        </div>
-                                    </div>
-                                    <div class="tile col-sm-12 col-md-12 col-lg-12">
-                                        <div class="inner">
-                                            <div class="lead">Spending</div>
-                                        </div>
-                                    </div>
-                                    <div class="tile col-sm-12 col-md-12 col-lg-12">
-                                        <div class="inner">
-                                            <div class="lead">Spending</div>
-                                        </div>
-                                    </div>
-                                    <div class="tile col-sm-12 col-md-12 col-lg-12">
-                                        <div class="inner">
-                                            <div class="lead">Spending</div>
-                                        </div>
-                                    </div>
-                                    <div class="tile col-sm-12 col-md-12 col-lg-12">
-                                        <div class="inner">
-                                            <div class="lead">Spending</div>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
 
@@ -256,7 +188,14 @@ d
                             <div class="no-pad col-sm-12 col-md-12 col-lg-12 account-page">
                                 <div class="col-sm-6 col-md-6 col-lg-6 account-left-info">
                                     <div class="account-info-header">
-                                        <span class="large">32.457 BTC</span>
+                                        <span class="large">23.5487 BTC</span>
+                                        <br><br>
+                                        <h1>wallet info here</h1>
+                                        <h1>Buttons and specific CTA too</h1>
+                                        <hr>
+                                        transaction info will populate based on clicks in the right col >>>
+                                        <br><br><br>
+                                        <<< clicks on the left will show another account
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6 account-right-info">
